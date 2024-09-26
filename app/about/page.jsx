@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 import Image from "next/image";
 import festivalImage1 from "@/img/festival1.jpeg";
 import festivalImage2 from "@/img/festival2.jpeg";

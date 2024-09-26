@@ -23,7 +23,7 @@ export default function TicketForm() {
               id="name"
               type="text"
               {...register("name", { required: "Name is required" })}
-              className={`border rounded-lg p-2 w-full ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
+              className={`border rounded-lg p-2 w-full ${errors.name ? "border-red-500" : "border-gray-300"}`}
             />
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
           </div>
@@ -40,7 +40,7 @@ export default function TicketForm() {
                   message: "Invalid email address"
                 }
               })}
-              className={`border rounded-lg p-2 w-full ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+              className={`border rounded-lg p-2 w-full ${errors.email ? "border-red-500" : "border-gray-300"}`}
             />
             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
           </div>
@@ -57,7 +57,7 @@ export default function TicketForm() {
                   message: "At least one ticket is required"
                 }
               })}
-              className={`border rounded-lg p-2 w-full ${errors.tickets ? 'border-red-500' : 'border-gray-300'}`}
+              className={`border rounded-lg p-2 w-full ${errors.tickets ? "border-red-500" : "border-gray-300"}`}
             />
             {errors.tickets && <p className="text-red-500 text-xs mt-1">{errors.tickets.message}</p>}
           </div>
