@@ -75,8 +75,8 @@ export default function About() {
           <div className="mb-8">
             <h2 className="text-3xl font-semibold mb-4">Join Us</h2>
             <p className="text-md mb-4">
-              We invite you to be a part of our journey. Whether you're an artist, a volunteer, or an enthusiastic attendee, 
-              there's a place for you at the Global Music Fest. Come experience the magic and joy of creativity with us!
+              We invite you to be a part of our journey. Whether you&apos;re an artist, a volunteer, or an enthusiastic attendee, 
+              there&apos;s a place for you at the Global Music Fest. Come experience the magic and joy of creativity with us!
             </p>
           </div>
         </section>

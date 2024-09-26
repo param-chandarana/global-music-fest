@@ -9,7 +9,7 @@ const galleryData = [
     id: 1,
     title: "Serenity",
     image: image, // Replace with actual image paths
-    description: "A tranquil scene of nature's beauty.",
+    description: "A tranquil scene of nature&apos;s beauty.",
   },
   {
     id: 2,
