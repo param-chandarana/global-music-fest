@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 import { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
@@ -21,15 +22,15 @@ const Footer = () => {
         {/* Left Section: Socials and Contact Email */}
         <div className="flex flex-col justify-start">
           <div className="flex mb-4 space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Go to the Facebook page">
               <FaFacebook size={24} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Go to the X (Twitter) page">
               <FaTwitter size={24} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Go to the Instagram page">
               <FaInstagram size={24} />
-            </a>
+            </Link>
           </div>
           <p className="mb-4">Contact us: <a href="mailto:info@example.com" className="underline">info@example.com</a></p>
         </div>

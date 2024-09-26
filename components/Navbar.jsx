@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div>
         <h1 className="text-2xl font-signature ml-2">
-          <Link href="/">
+          <Link href="/" aria-label="Go to Home page">
             <Image src={logo} alt="Global Music Fest" width={70} height={70} />
           </Link>
         </h1>
@@ -23,16 +23,16 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <ul className="hidden md:flex">
         <li className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-105 hover:text-white duration-200 link-underline">
-          <Link href="/about">about</Link>
+          <Link href="/about" aria-label="Go to About page">about</Link>
         </li>
         <li className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-105 hover:text-white duration-200 link-underline">
-          <Link href="/tickets">tickets</Link>
+          <Link href="/tickets" aria-label="Buy tickets for the festival">tickets</Link>
         </li>
         <li className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-105 hover:text-white duration-200 link-underline">
-          <Link href="/schedule">schedule</Link>
+          <Link href="/schedule" aria-label="View festival schedule">schedule</Link>
         </li>
         <li className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-105 hover:text-white duration-200 link-underline">
-          <Link href="/gallery">gallery</Link>
+          <Link href="/gallery" aria-label="View gallery">gallery</Link>
         </li>
       </ul>
 
@@ -51,22 +51,22 @@ const Navbar = () => {
         } flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500 z-40`}
       >
         <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <Link onClick={() => setNav(!nav)} href="/about">
+          <Link onClick={() => setNav(!nav)} href="/about" aria-label="Go to About page">
             about
           </Link>
         </li>
         <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <Link onClick={() => setNav(!nav)} href="/tickets">
+          <Link onClick={() => setNav(!nav)} href="/tickets" aria-label="Buy tickets for the festival">
             tickets
           </Link>
         </li>
         <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <Link onClick={() => setNav(!nav)} href="/schedule">
+          <Link onClick={() => setNav(!nav)} href="/schedule" aria-label="View festival schedule">
             schedule
           </Link>
         </li>
         <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-          <Link onClick={() => setNav(!nav)} href="/gallery">
+          <Link onClick={() => setNav(!nav)} href="/gallery" aria-label="View gallery">
             gallery
           </Link>
         </li>

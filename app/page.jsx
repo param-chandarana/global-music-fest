@@ -33,7 +33,7 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <Link href="/tickets">
+          <Link href="/tickets" aria-label="Buy tickets for the festival">
             <button className="bg-white text-indigo-800 transition-colors duration-300 ease-in-out px-6 py-3 rounded-full font-semibold text-lg hover:bg-indigo-800 hover:text-white border-none">
               Get Tickets
             </button>
